@@ -12,41 +12,7 @@
      이 표준안은 같은 싱크탱크 소속의 저명한 학자 5인(a.k.a. Robode Monkeys)에 의해 철저
     한 감수를 거쳐 승인되었다.
 
---------------------------------------------------------------------------------
-
-    [Core Philosophy]
-    Inspired by Dr. Mobius's epiphany during a Mentats overdose, this convention
-    adheres to the following five axioms.
-
-    1. 가독성 최우선 (Readability First)
-    Code is meant to be read by 'humans' (or brains in jars), not just machines.
-    If your logic isn't intuitive enough for a standard *Lobotomite* to grasp,
-    it is a failed experiment.
-
-    2. 명시성 추구 (Explicitness Over Implicit)
-    Do not hide behind the compiler's 'implicit' kindness. Hidden intentions—like
-    a *Nightstalker* chewing on a *Stealth Boy*—will eventually bite you.
-    Everything must be as crystal clear as a *Pip-Boy* display.
-
-    3. 정보의 단일화 (Single Source of Truth)
-    Just as *Mr. House* is the sole proprietor of Vegas, your data must have only
-    one master. Duplicate definitions only invite conflict—much like the endless
-    war between the *NCR* and *Caesar's Legion*.
-
-    4. 부정의 배제 (Avoid Negativity)
-    The logic of 'negating a negative' is indecipherable without a steady supply
-    of *Mentats*. Do not squander your precious *Intelligence (INT)* stats on
-    twisted logic. Keep it positive and sharp.
-
-    5. 구조적 일관성 (Structural Consistency)
-    Your code is not the lawless *Wasteland*. It must be as organized as the
-    laboratories of *Big Mountain*—or the pristine suites of the *Lucky 38*.
-    Everything has its place; do not get lost.
-
 ------------------------------------------------------------------------------*/
-
-
-
 /*------------------------------------------------------------------------------
 
     # 00. 코딩하며 생각할 것
@@ -508,7 +474,7 @@ private Dictionary<string, List<int>> _cache = new();
 크게 향상시킵니다.   
 
 
-제3부: 유니티 상속 구조와 Awake 메서드 경고 분석
+제3부: 전체 내용에 대한 요약
 
 3.1 요청 1: 접근 지정자의 명시적 코딩
 관련 문서: [Microsoft Learn] Access Modifiers (C# Programming Guide)    
