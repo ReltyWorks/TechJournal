@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace BindBehaviour
+namespace UnityUtils
 {
     #region Attribute 선언부
 

@@ -1,4 +1,4 @@
-﻿## Unity DLLs
+﻿# Unity DLLs
 
 These files were added specifically for working with Unity code within Visual Studio.
 

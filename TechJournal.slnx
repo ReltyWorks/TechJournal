@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="BindBehaviour/BindBehaviour.csproj" Id="7a573d9c-22b4-47ae-8ca1-8865bd06ea96" />
   <Project Path="CodingConvention/CodingConvention.csproj" />
+  <Project Path="UnityUtils/UnityUtils.csproj" Id="8793d686-841a-4b2b-84a4-d5f8a0cf3f16" />
 </Solution>
