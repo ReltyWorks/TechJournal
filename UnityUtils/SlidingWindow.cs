@@ -4,7 +4,8 @@ using UnityEngine.EventSystems;
 
 namespace UnityUtils
 {
-    public class SlidingWindow : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+    public class SlidingWindow : MonoBehaviour, IPointerEnterHandler,
+                                 IPointerExitHandler, IPointerClickHandler
     {
         [SerializeField] private float _openPosX = 0f;
         [SerializeField] private float _openPosY = 0f;
@@ -80,7 +81,8 @@ namespace UnityUtils
                                        : new Vector2(_closePosX, _closePosY);
 
             // 현재 위치와 목표 위치 사이의 거리가 0.1f보다 크면 계속 이동
-            while (Vector2.Distance(_rectTransform.anchoredPosition, targetPos) > 0.1f)
+            while (Vector2.Distance(_rectTransform.anchoredPosition,
+                                    targetPos) > 0.1f)
             {
                 _rectTransform.anchoredPosition = Vector2.MoveTowards(
                                                   _rectTransform.anchoredPosition,
