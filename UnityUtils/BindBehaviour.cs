@@ -193,7 +193,8 @@ namespace UnityUtils
                 // 2. 조건 검사
                 if (fieldInfo.FieldType != typeof(Transform))
                 {
-                    Debug.LogWarning($"[BindBehaviour] {fieldInfo.Name}필드는 Transform 타입이 아니므로 무시됩니다.");
+                    Debug.LogWarning
+                        ($"[BindBehaviour] {fieldInfo.Name}필드는 Transform 타입이 아니므로 무시됩니다.");
                     continue;
                 }
 
@@ -206,7 +207,8 @@ namespace UnityUtils
                 }
                 else
                 {
-                    Debug.LogWarning($"[BindBehaviour] {fieldInfo.Name}필드를 할당하지 않았으므로 무시됩니다.");
+                    Debug.LogWarning
+                        ($"[BindBehaviour] {fieldInfo.Name}필드를 할당하지 않았으므로 무시됩니다.");
                     continue;
                 }
             }
@@ -219,7 +221,7 @@ namespace UnityUtils
         {
             // 1. 탐색할 이름 결정
             Type fieldType = fieldInfo.FieldType; // 연결할 변수의 타입 (예: Button)
-            string gameObjectName = ConvertFieldNameToGameObjectName(fieldType, fieldName); // 찾을 이름
+            string gameObjectName = ConvertFieldNameToGameObjectName(fieldType, fieldName);
             GameObject found = FindGameObjectByName(searchRoots, gameObjectName); // 검색
 
             // 2. 의존성 주입 시도
@@ -228,7 +230,8 @@ namespace UnityUtils
         }
 
         // [BindRoot] 꼬리표가 붙은 필드의 의존성을 주입
-        private void ResolveFieldBySceneRoot(FieldInfo fieldInfo, List<Transform> searchRoots, string fieldName)
+        private void ResolveFieldBySceneRoot(FieldInfo fieldInfo, List<Transform> searchRoots,
+                                             string fieldName)
         {
             // 1. 탐색할 이름 결정
             Type fieldType = fieldInfo.FieldType; // 연결할 변수의 타입
@@ -283,12 +286,14 @@ namespace UnityUtils
         }
 
         // [BindList] 꼬리표가 붙은 필드의 의존성을 주입
-        private void ResolveListField(FieldInfo fieldInfo, List<Transform> searchRoots, string fieldName)
+        private void ResolveListField(FieldInfo fieldInfo, List<Transform> searchRoots,
+                                      string fieldName)
         {
             // 1. 필드 타입이 배열(Array) 또는 List<T>인지 확인
             Type fieldType = fieldInfo.FieldType; // 예: Button[] 또는 List<Button>
             bool isArray = fieldType.IsArray;
-            bool isList = (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>));
+            bool isList = (fieldType.IsGenericType 
+                        && fieldType.GetGenericTypeDefinition() == typeof(List<>));
 
             if (isArray == false && isList == false)
             {
